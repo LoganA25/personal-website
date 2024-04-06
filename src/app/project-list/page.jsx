@@ -14,13 +14,13 @@ import { loadProjects } from '@/lib/mdx'
 
 function Projects({ projects }) {
   return (
-    <Container className="mt-40">
+    <Container className="mt-40 flex">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
           Projects coming soon!
         </h2>
       </FadeIn>
-      <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+      {/* <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
         {projects.map((project) => (
           <FadeIn key={project.client}>
             <article>
@@ -45,7 +45,7 @@ function Projects({ projects }) {
                       <time dateTime={project.date}>
                         {formatDate(project.date)}
                       </time>
-                    </p> */}
+                    </p> 
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
@@ -70,7 +70,7 @@ function Projects({ projects }) {
             </article>
           </FadeIn>
         ))}
-      </div>
+      </div> */}
     </Container>
   )
 }
@@ -93,7 +93,7 @@ export default async function Work() {
 
       <Projects projects={projects} /> 
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   )
 }

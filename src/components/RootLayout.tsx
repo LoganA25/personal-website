@@ -143,7 +143,7 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-3xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Projects</NavigationItem>
+        <NavigationItem href="/project-list">Projects</NavigationItem>
         <NavigationItem href="/about">About Me</NavigationItem>
       </NavigationRow>
     </nav>

@@ -167,9 +167,7 @@ function Culture() {
 // }
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+  title: 'About Me',
 }
 
 export default async function About() {
@@ -177,44 +175,30 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About Me" title="Placeholder text">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+          placeat voluptates quo modi ipsam ullam nesciunt rerum praesentium
+          sapiente natus distinctio nisi, ipsa alias eos explicabo vero
+          provident commodi dignissimos?
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
+            consectetur officia! Voluptates iure perspiciatis, expedita
+            voluptatibus, iste laborum earum facilis quo deleniti dolore
+            provident beatae reiciendis ratione eaque architecto maxime!
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem aliquid eveniet, facere doloremque perspiciatis
+            voluptatibus ipsa! Recusandae magni amet, fugiat voluptatum beatae
+            in possimus nostrum tenetur ea fuga reprehenderit quibusdam.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container>
-
-      <Culture />
 
       {/* <Team /> */}
-
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
-      />
 
       <ContactSection />
     </>
