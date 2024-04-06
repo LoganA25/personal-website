@@ -9,14 +9,6 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadProjects } from '@/lib/mdx'
 
@@ -68,19 +60,11 @@ function Projects({ projects }) {
                   <div className="mt-8 flex">
                     <Button
                       href={project.href}
-                      aria-label={`Read case study: ${project.client}`}
+                      aria-label={`Read Project: ${project.client}`}
                     >
-                      Read case study
+                      Read Project
                     </Button>
                   </div>
-                  {project.testimonial && (
-                    <Blockquote
-                      author={project.testimonial.author}
-                      className="mt-12"
-                    >
-                      {project.testimonial.content}
-                    </Blockquote>
-                  )}
                 </div>
               </Border>
             </article>
@@ -89,52 +73,6 @@ function Projects({ projects }) {
       </div>
     </Container>
   )
-}
-
-const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
-]
-
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
-
-export const metadata = {
-  title: 'Our Work',
-  description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
 }
 
 export default async function Work() {
@@ -153,7 +91,7 @@ export default async function Work() {
         </p>
       </PageIntro> */}
 
-      <Projects projects={projects} />
+      <Projects projects={projects} /> 
 
       <ContactSection />
     </>
