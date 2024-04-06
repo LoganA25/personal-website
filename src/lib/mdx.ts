@@ -20,8 +20,10 @@ async function loadEntries<T extends { date: string }>(
         },
       ),
     )
-  ).sort((a, b) => b.date.localeCompare(a.date))
+  )
 }
+
+//.sort((a, b) => b.date.localeCompare(a.date)) --> Date
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
@@ -38,7 +40,7 @@ export interface Article {
   }
 }
 
-export interface CaseStudy {
+export interface project {
   date: string
   client: string
   title: string
@@ -60,6 +62,6 @@ export function loadArticles() {
   return loadEntries<Article>('blog', 'article')
 }
 
-export function loadCaseStudies() {
-  return loadEntries<CaseStudy>('work', 'caseStudy')
+export function loadProjects() {
+  return loadEntries<project>('projects', 'project')
 }

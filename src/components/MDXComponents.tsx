@@ -11,7 +11,7 @@ export const MDXComponents = {
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof Blockquote>) {
-    return <Blockquote className={clsx('my-32', className)} {...props} />
+    return <Blockquote className={clsx('my-12', className)} {...props} />
   },
   img: function Img({
     className,

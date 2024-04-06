@@ -3,7 +3,7 @@ import clsx from 'clsx'
 type BorderProps<T extends React.ElementType> = {
   as?: T
   className?: string
-  position?: 'top' | 'left'
+  position?: 'top' 
   invert?: boolean
 }
 

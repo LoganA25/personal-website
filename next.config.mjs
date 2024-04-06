@@ -72,7 +72,7 @@ export default async function config() {
           ],
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/work'))}`),
-            [[remarkMDXLayout, '@/app/work/wrapper', 'caseStudy']],
+            [[remarkMDXLayout, '@/app/work/wrapper', 'project']],
           ],
         ],
       ],
