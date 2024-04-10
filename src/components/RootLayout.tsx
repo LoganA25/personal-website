@@ -68,21 +68,23 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
-            className="h-8 sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
+          <div className="flex items-center">
+            <Logomark
+              className="h-8 sm:hidden"
+              invert={invert}
+              filled={logoHovered}
+            />
+            <Logo
+              className="hidden h-8 sm:block"
+              invert={invert}
+              filled={logoHovered}
+            />
+          </div>
         </Link>
-        
+
         <div className="flex items-center sm:gap-x-8">
-          <Button href="/contact" invert={invert} className='hidden sm:flex'>
-            Contact Me
+          <Button href="https://github.com/LoganA25" invert={invert} className="hidden sm:flex">
+            Github  
           </Button>
           <button
             ref={toggleRef}

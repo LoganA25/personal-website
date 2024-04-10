@@ -8,7 +8,7 @@ import { Logo } from '@/components/Logo'
 const navigation = [
   {
     links: [
-      { title: 'Projects', href: '/projects' },
+      { title: 'Projects', href: '/project-list' },
       { title: 'About', href: '/about' },
       { title: 'Contact', href: '/contact' },
     ],
@@ -76,7 +76,7 @@ export function Footer() {
         <div className="flex flex-col gap-y-8 md:flex-row items-center justify-between border-t border-neutral-950/10 py-4 md:py-12">
           <Navigation />
           <p className="flex justify-center sm:justify-end text-neutral-700">
-            © Logan Allen {new Date().getFullYear()}
+           <Link href='/'> © Logan Allen {new Date().getFullYear()} </Link>
           </p>
         </div>
       </FadeIn>

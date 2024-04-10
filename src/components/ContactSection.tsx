@@ -1,13 +1,12 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 
 export function ContactSection() {
   return (
     <Container className="sm:mt-16 lg:mt-24 py-8 flex">
       <FadeIn>
-        <Button>
+        <Button href="https://github.com/LoganA25">
           <div className="max-w-4xl">
             <div className="max-w-xl flex items-center">
               <h2 className="font-display font-medium text-white" />

@@ -1,7 +1,3 @@
-import { type Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
-
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -54,7 +50,7 @@ function Projects({
   )
 }
 
-function Services() {
+function Info() {
   return (
     <>
       <SectionIntro
@@ -111,11 +107,6 @@ function Services() {
   )
 }
 
-export const metadata: Metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
-}
-
 export default async function Home() {
   let projects = (await loadProjects()).slice(0, 3)
 
@@ -140,20 +131,9 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-      {/* <Clients /> */}
-
       <Projects projects={projects} />
 
-      {/* <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial> */}
-
-      <Services />
+      <Info />
 
       <ContactSection />
     </>
