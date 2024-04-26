@@ -175,25 +175,26 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About Me" title="Placeholder text">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-          placeat voluptates quo modi ipsam ullam nesciunt rerum praesentium
-          sapiente natus distinctio nisi, ipsa alias eos explicabo vero
-          provident commodi dignissimos?
-        </p>
+      <PageIntro eyebrow="" title="Who am I?">
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-            consectetur officia! Voluptates iure perspiciatis, expedita
-            voluptatibus, iste laborum earum facilis quo deleniti dolore
-            provident beatae reiciendis ratione eaque architecto maxime!
+            I’m a data analyst/engineer at a small health facility where I
+            specialize in building systems that transform complex data into
+            clear insights. When I'm not at work, I love learning new things in
+            software development and taking on projects that challenge me.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem aliquid eveniet, facere doloremque perspiciatis
-            voluptatibus ipsa! Recusandae magni amet, fugiat voluptatum beatae
-            in possimus nostrum tenetur ea fuga reprehenderit quibusdam.
+            Outside of work and learning, I’m a big fan of video games. I spend
+            some of my downtime playing with friends. It’s my favorite way to
+            relax and have fun!
+          </p>
+          <p>
+            At home, I’m kept company by two dogs and a cat, and supported by my
+            wonderful wife. An interesting fact about me, I always sneeze twice!
+          </p>
+          <p>
+            Thanks for stopping by! I’m always open to discussing technology,
+            gaming, or anything else you might find interesting!
           </p>
         </div>
       </PageIntro>
