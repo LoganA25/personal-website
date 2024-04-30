@@ -75,7 +75,7 @@ function Info() {
               and pipeline development, grounded in a foundational understanding
               that goes beyond specific tools like Snowflake, Python, SQL, or
               Dagster. This deep comprehension of data principles enables me to
-              adeptly navigate and optimize any data environment. Whether it's
+              adeptly navigate and optimize any data environment. Whether it&apos;s
               structuring and analyzing data for strategic insights or designing
               and maintaining robust data pipelines, I adapt and utilize the
               most fitting technologies to ensure effective and insightful
