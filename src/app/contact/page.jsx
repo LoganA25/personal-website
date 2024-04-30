@@ -11,8 +11,8 @@ export default function Projects() {
         <div className="my-6 border-2 rounded-md">
           <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-xl rounded-md text-[#333] font-[sans-serif]">
             <div>
-              <h1 className="text-3xl font-extrabold">Let's Talk</h1>
-              <p className="text-sm text-gray-400 mt-3">If you have something you'd like to speak about or would just like to get in touch, feel free to reach out! I look foward to getting to know you!</p>
+              <h1 className="text-3xl font-extrabold">Let&apos;s Talk</h1>
+              <p className="text-sm text-gray-400 mt-3">If you have something you&apos;d like to speak about or would just like to get in touch, feel free to reach out! I look foward to getting to know you!</p>
               <div className="mt-12">
                 <h2 className="text-lg font-extrabold">Email</h2>
                 <ul className="mt-3">

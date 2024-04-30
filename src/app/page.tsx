@@ -15,7 +15,7 @@ function Projects({
   return (
     <>
       <SectionIntro
-        title="Projects coming soon!"
+        title="Projects/Collaborations coming soon!"
         className="mt-24 sm:mt-32 lg:mt-40"
       ></SectionIntro>
       {/* <Container className="mt-16">
@@ -83,7 +83,7 @@ function Info() {
             </ListItem>
             <ListItem title="Software Development">
               My foundation in software development is broad, encompassing a
-              variety of languages and paradigms.Whether it’s developing
+              variety of languages and paradigms.Whether it&apos;s developing
               back-end processes, crafting web services, or automating
               workflows, my goal is to create software that is both functional
               and sustainable. Embracing best practices in software development,
@@ -118,7 +118,7 @@ export default async function Home() {
             Software Developer and Data Enthusiast
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            As a software developer and data enthusiast, I'm focused on
+            As a software developer and data enthusiast, I&apos;m focused on
             building solutions that not only meet user needs but are also robust
             and reliable, ensuring they deliver value and functionality. My work
             in data analysis/engineering revolves around extracting
