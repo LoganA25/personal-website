@@ -1,16 +1,10 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
-import { Blockquote } from '@/components/Blockquote'
-import { Border } from '@/components/Border'
-import { Button } from '@/components/Button'
+import { Form } from '@/components/Form'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
-import { formatDate } from '@/lib/formatDate'
-import { loadProjects } from '@/lib/mdx'
 
-function Projects({ projects }) {
+export default function Projects() {
   return (
     <Container className="mt-40 flex">
       <FadeIn>
@@ -61,18 +55,7 @@ function Projects({ projects }) {
                 </ul>
               </div>
             </div>
-            <form className="ml-auo space-y-4">
-              <input type='text' placeholder='Name'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#000000]" />
-              <input type='email' placeholder='Email'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#000000]" />
-              <input type='text' placeholder='Subject'
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#000000]" />
-              <textarea placeholder='Message' rows="6" maxLength={1000}
-                className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#000000]"></textarea>
-              <button
-                className="text-white bg-[#000000] hover:bg-[#FFFFFF] hover:text-[#000000] border hover:outline-[#00000] font-semibold rounded-md text-sm px-4 py-2.5 w-full">Send</button>
-            </form>
+            <Form/>
           </div>
         </div>
       </FadeIn>
@@ -80,25 +63,3 @@ function Projects({ projects }) {
   )
 }
 
-export default async function Work() {
-  let projects = await loadProjects()
-
-  return (
-    <>
-      {/* <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
-      >
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
-      </PageIntro> */}
-
-      <Projects projects={projects} />
-
-      {/* <ContactSection /> */}
-    </>
-  )
-}
