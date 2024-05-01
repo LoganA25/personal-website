@@ -17,7 +17,7 @@ export default async function projectLayout({ project, children }) {
     <>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow="Case Study" title={project.title} centered>
+          <PageIntro title={project.title} centered>
             <p>{project.description}</p>
           </PageIntro>
 

@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 
-import { ContactSection } from '@/components/ContactSection'
+import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
@@ -18,14 +18,14 @@ export default async function About() {
     <>
       <FadeIn>
         <PageIntro eyebrow="" title="Who am I?">
-          <div className="mt-10 max-w-2xl space-y-6 text-base">
+          <div className="mt-10 max-w-2xl space-y-6 pb-6 text-base sm:pb-14">
             <p>
-              I&apos;m a data analyst/engineer at a small health facility where
-              I specialize in building systems that transform complex data into
-              clear insights. When I&apos;m not at work, I love learning new
-              things in software development and taking on new
-              challenges. One of my favorite things to do is collaborate with
-              people on projects!
+              My names Logan, and currently I&apos;m a data analyst/engineer at a
+              small health facility where I specialize in building systems that
+              transform complex data into clear insights. When I&apos;m not at
+              work, I love learning new things in software development and
+              taking on new challenges. One of my favorite things to do is
+              collaborate with people on projects!
             </p>
             <p>
               Outside of work and learning, I&apos;m a big fan of video games. I
@@ -39,12 +39,11 @@ export default async function About() {
             </p>
             <p>
               Thanks for stopping by! I&apos;m always open to discussing
-              technology, gaming, or anything else you might find interesting!
+              technology, gaming, or anything else you might find interesting.
+              Feel free to reach out!
             </p>
           </div>
         </PageIntro>
-
-        <ContactSection />
       </FadeIn>
     </>
   )

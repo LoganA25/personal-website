@@ -7,11 +7,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import { type project, type MDXEntry, loadProjects } from '@/lib/mdx'
 
-function Projects({
-  projects,
-}: {
-  projects: Array<MDXEntry<project>>
-}) {
+function Projects({ projects }: { projects: Array<MDXEntry<project>> }) {
   return (
     <>
       <SectionIntro
@@ -27,7 +23,7 @@ function Projects({
                   <Link href={project.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     {/* Produces logo for Projects */}
-                    {/* <Image
+      {/* <Image
                       src={project.logo}
                       alt={project.client}
                       className="h-16 w-16"
@@ -71,34 +67,26 @@ function Info() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Data Analaysis & Engineering">
-              I delve deep into data spans across database management, analysis,
-              and pipeline development, grounded in a foundational understanding
-              that goes beyond specific tools like Snowflake, Python, SQL, or
-              Dagster. This deep comprehension of data principles enables me to
-              adeptly navigate and optimize any data environment. Whether it&apos;s
-              structuring and analyzing data for strategic insights or designing
-              and maintaining robust data pipelines, I adapt and utilize the
-              most fitting technologies to ensure effective and insightful
-              outcomes, driving strategic data-driven decisions.
+              In my current position, I dive into multiple areas of data. That
+              includes database management, analysis, and pipeline devlopment.
+              This knowledge goes beyond our tech stack which includes
+              Snowflake, Python, SQL, and Dagster. From structuring and
+              analyzing data for insights, or desinging and maintaining data
+              piplines, I&apos;m able to adapt and ensure effective outcomes.
             </ListItem>
             <ListItem title="Software Development">
               My foundation in software development is broad, encompassing a
-              variety of languages and paradigms.Whether it&apos;s developing
-              back-end processes, crafting web services, or automating
-              workflows, my goal is to create software that is both functional
-              and sustainable. Embracing best practices in software development,
-              I am committed to code quality, performance optimization, and
-              leveraging the full potential of modern programming to deliver
-              exceptional results.
+              variety of languages as well as essential concepts. From
+              developing back-end processes, building web services, or
+              automating work flows, my goal is to produce sustainable and
+              functional code.
             </ListItem>
             <ListItem title="Continuous Learning">
-              I am dedicated to continuous learning, which equips me to navigate
-              the rapidly evolving tech landscape. My capability to promptly
-              understand and apply new languages, frameworks, and methodologies
-              demonstrates my adaptability and commitment. This flexible
-              approach ensures I can effectively engage with a variety of tools
-              and technologies, adapting to whatever the project requires to
-              achieve successful outcomes.
+              My self-drive fuels my continuous learning, which is essential in
+              the ever-evolving tech landscape. I enjoy mastering new
+              technologies and leveraging them to create innovative solutions.
+              This passion for learning and innovation drives my contributions
+              to the field, ensuring I always bring fresh ideas to the table.
             </ListItem>
           </List>
         </div>
@@ -121,12 +109,12 @@ export default async function Home() {
             As a software developer and data enthusiast, I&apos;m focused on
             building solutions that not only meet user needs but are also robust
             and reliable, ensuring they deliver value and functionality. My work
-            in data analysis/engineering revolves around extracting
-            meaningful insights from complex data sets and designing systems
-            that are both efficient and scalable. Beyond these technical skills,
-            my commitment to continuous learning is fundamental, driving me to
-            constantly update my knowledge and adapt to new challenges, keeping
-            my approach fresh and effective.
+            in data analysis/engineering revolves around extracting meaningful
+            insights from complex data sets and designing systems that are both
+            efficient and scalable. Beyond these technical skills, my commitment
+            to continuous learning is fundamental, driving me to constantly
+            update my knowledge and adapt to new challenges, keeping my approach
+            fresh and effective.
           </p>
         </FadeIn>
       </Container>
