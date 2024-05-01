@@ -109,7 +109,7 @@ export default async function Home() {
             As a software developer and data enthusiast, I&apos;m focused on
             building solutions that not only meet user needs but are also robust
             and reliable, ensuring they deliver value and functionality. My work
-            in data analysis/engineering revolves around extracting meaningful
+            in data revolves around extracting meaningful
             insights from complex data sets and designing systems that are both
             efficient and scalable. Beyond these technical skills, my commitment
             to continuous learning is fundamental, driving me to constantly
