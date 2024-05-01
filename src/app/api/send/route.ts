@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       text: message,
       react: '',
     });
-
+    
     return Response.json(data);
   } catch (error) {
     return Response.json({ error });
