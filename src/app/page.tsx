@@ -71,7 +71,7 @@ function Info() {
               includes database management, analysis, and pipeline devlopment.
               This knowledge goes beyond our tech stack which includes
               Snowflake, Python, SQL, and Dagster. From structuring and
-              analyzing data for insights, or desinging and maintaining data
+              analyzing data for insights, or designing and maintaining data
               piplines, I&apos;m able to adapt and ensure effective outcomes.
             </ListItem>
             <ListItem title="Software Development">
