@@ -9,6 +9,7 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       from: `${from} ${email} via <onboarding@resend.dev>`,
       to: 'loganallendev@gmail.com',
+      reply_to: email,
       subject: subject,
       text: message,
       react: '',
