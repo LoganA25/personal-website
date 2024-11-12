@@ -26,9 +26,14 @@ export default async function About() {
               collaborate with people on projects!
             </p>
             <p>
-              Outside of work and learning, I&apos;m a big fan of video games. I
-              spend some of my downtime playing with friends. It&apos;s my
-              favorite way to relax and have fun!
+              Outside of work and learning, I&apos;m a huge sports fan, especially 
+              when it comes to the NFL. While I love following the league as a whole, 
+              I&apos;m a proud Saints fan at heart—who dat! I enjoy keeping up with the 
+              latest stats, watching games, and diving into everything football-related.
+            </p>
+            <p>
+              In my downtime, I&apos;m also a big fan of video games, and I love 
+              playing with friends as a way to relax and have fun. 
             </p>
             <p>
               At home, I&apos;m kept company by two dogs and a cat, and
