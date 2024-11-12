@@ -6,29 +6,31 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import { type project, type MDXEntry, loadProjects } from '@/lib/mdx'
+import Image from 'next/image'
+import Link from 'next/link'
 
 function Projects({ projects }: { projects: Array<MDXEntry<project>> }) {
   return (
     <>
       <SectionIntro
-        title="Projects/Collaborations coming soon!"
+        title="Projects"
         className="mt-24 sm:mt-32 lg:mt-40"
       ></SectionIntro>
-      {/* <Container className="mt-16">
+      <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {projects.map((project) => (
             <FadeIn key={project.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8 shadow-md border-neutral-950 border">
                 <h3>
                   <Link href={project.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     {/* Produces logo for Projects */}
-      {/* <Image
+                    <Image
                       src={project.logo}
                       alt={project.client}
                       className="h-16 w-16"
                       unoptimized
-                    /> 
+                    />
                   </Link>
                 </h3>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
@@ -41,7 +43,7 @@ function Projects({ projects }: { projects: Array<MDXEntry<project>> }) {
             </FadeIn>
           ))}
         </FadeInStagger>
-      </Container> */}
+      </Container>
     </>
   )
 }
@@ -109,12 +111,12 @@ export default async function Home() {
             As a software developer and data enthusiast, I&apos;m focused on
             building solutions that not only meet user needs but are also robust
             and reliable, ensuring they deliver value and functionality. My work
-            in data revolves around extracting meaningful
-            insights from complex data sets and designing systems that are both
-            efficient and scalable. Beyond these technical skills, my commitment
-            to continuous learning is fundamental, driving me to constantly
-            update my knowledge and adapt to new challenges, keeping my approach
-            fresh and effective.
+            in data revolves around extracting meaningful insights from complex
+            data sets and designing systems that are both efficient and
+            scalable. Beyond these technical skills, my commitment to continuous
+            learning is fundamental, driving me to constantly update my
+            knowledge and adapt to new challenges, keeping my approach fresh and
+            effective.
           </p>
         </FadeIn>
       </Container>

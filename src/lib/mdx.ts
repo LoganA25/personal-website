@@ -63,5 +63,5 @@ export function loadArticles() {
 }
 
 export function loadProjects() {
-  return loadEntries<project>('projects', 'project')
+  return loadEntries<project>('project-list', 'project')
 }

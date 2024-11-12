@@ -1,0 +1,51 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import logo from '@/images/channel_logo.png'
+import preview from '@/images/cytechgaming_website_preview.png'
+
+export const project = {
+  client: 'Cytech Gaming',
+  title: 'Video Editor/Content Creator Portfolio',
+  description:
+    'Designed for Cytech Gaming, this website showcases their editing portfolio and connects users to their channel.',
+  summary: [
+    `This website was designed for Cytech Gaming to showcase their editing expertise and YouTube channel content. It highlights their editing portfolio, allowing visitors to explore and appreciate the quality and style of their work. The site also connects users directly to their social channels and provides an seamless browsing experience tailored to their brand's aesthetic.`,
+  ],
+  logo,
+  preview,
+  date: '2024-10',
+  category: 'Web development',
+}
+
+export const metadata = {
+  title: `${project.title} Project`,
+  description: project.description,
+}
+
+<div className="lg:pl-0 px-4 space-y-8">
+  <div className="pt-16 text-2xl font-bold">{project.title}</div>
+
+  Creating this portfolio for a friend was fun to do! After hearing his vision, I worked independently to design and help him visualize a showcase that would capture his versatility across different categories. With a range of content—from music and entertainment to trailers, gaming, and education—I had the chance to highlight his editing skills across multiple areas. Each video showcases his ability to adapt his editing style to different tones and pacing, whether it&apos;s the rhythm and energy of music videos, the storytelling in trailers, or the high-energy cuts that define gaming content.
+
+  Working on this project allowed me to blend my creativity and utilize my skills to achieve his vision. It was incredibly satisfying to see everything come together to capture his versatility and passion for creating standout content!
+
+  Please go check out his work and let me know if you have any feedback on the website! Here's the link along with a preview!
+
+  <div className="text-lg">https://cytechgaming.com/</div>
+
+  <Link href="https://cytechgaming.com/">
+    <Image src={project.preview} alt="Cytech Gaming Website Preview" />
+  </Link>
+
+  <div className="text-lg font-bold">Stack Used</div>
+
+  <div className="pb-6">
+    <TagList>
+      <TagListItem>Frontend (Next.js)</TagListItem>
+      <TagListItem>Email Service (Resend)</TagListItem>
+      <TagListItem>Tailwind CSS (Styling)</TagListItem>
+      <TagListItem>Vercel (Hosting)</TagListItem>
+      <TagListItem>Cloudflare (Domain & Security)</TagListItem>
+    </TagList>
+  </div>
+</div>

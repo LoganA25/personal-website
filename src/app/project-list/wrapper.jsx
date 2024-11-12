@@ -39,8 +39,8 @@ export default async function projectLayout({ project, children }) {
                       </dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
-                      <dt className="font-semibold">Service</dt>
-                      <dd>{project.service}</dd>
+                      <dt className="font-semibold">Category</dt>
+                      <dd>{project.category}</dd>
                     </div>
                   </dl>
                 </div>

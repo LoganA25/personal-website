@@ -2,8 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-
+import { FadeIn } from '@/components/FadeIn'
+import { formatDate } from '@/lib/formatDate'
+import { Border } from '@/components/Border'
+import { Button } from '@/components/Button'
 import { loadProjects } from '@/lib/mdx'
 
 function Projects({ projects }) {
@@ -11,10 +13,10 @@ function Projects({ projects }) {
     <Container className="mt-40 flex">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Projects/Collaborations coming soon!
+          Projects
         </h2>
       </FadeIn>
-      {/* <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+      <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
         {projects.map((project) => (
           <FadeIn key={project.client}>
             <article>
@@ -33,13 +35,13 @@ function Projects({ projects }) {
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                     <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                      {project.service}
+                      {project.category}
                     </p>
-                    {/* <p className="text-sm text-neutral-950 lg:mt-2">
+                    <p className="text-sm text-neutral-950 lg:mt-2">
                       <time dateTime={project.date}>
                         {formatDate(project.date)}
                       </time>
-                    </p> 
+                    </p>
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
@@ -64,7 +66,7 @@ function Projects({ projects }) {
             </article>
           </FadeIn>
         ))}
-      </div> */}
+      </div>
     </Container>
   )
 }
@@ -74,20 +76,7 @@ export default async function Work() {
 
   return (
     <>
-      {/* <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
-      >
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
-      </PageIntro> */}
-
-      <Projects projects={projects} /> 
-
-      {/* <ContactSection /> */}
+      <Projects projects={projects} />
     </>
   )
 }
