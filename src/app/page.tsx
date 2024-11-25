@@ -108,7 +108,7 @@ export default async function Home() {
             Data Engineer / Software Engineer
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            As a data engineer and software developer, I&apos;m focused on
+            As a data engineer and software engineer, I&apos;m focused on
             building solutions that not only meet user needs but are also robust
             and reliable, ensuring they deliver value and functionality. My work
             in data revolves around extracting meaningful insights from complex
