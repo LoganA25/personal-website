@@ -18,7 +18,7 @@ export default async function About() {
         <PageIntro eyebrow="" title="Who am I?">
           <div className="mt-10 max-w-2xl space-y-6 pb-6 text-base sm:pb-14">
             <p>
-              My names Logan, and currently I&apos;m a data analyst/engineer at a
+              My names Logan, and currently I&apos;m a data engineer at a
               small health facility where I specialize in building systems that
               transform complex data into clear insights. When I&apos;m not at
               work, I love learning new things in software development and
