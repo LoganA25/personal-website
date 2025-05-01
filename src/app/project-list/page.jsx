@@ -16,7 +16,7 @@ function Projects({ projects }) {
           Projects
         </h2>
       </FadeIn>
-      <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+      <div className="mt-10">
         {projects.map((project) => (
           <FadeIn key={project.client}>
             <article>
@@ -53,7 +53,7 @@ function Projects({ projects }) {
                       <p key={paragraph}>{paragraph}</p>
                     ))}
                   </div>
-                  <div className="mt-8 flex lg:pb-0 pb-6">
+                  <div className="mt-8 flex lg:pb-24 pb-6">
                     <Button
                       href={project.href}
                       aria-label={`Read Project: ${project.client}`}

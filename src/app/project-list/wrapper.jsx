@@ -75,7 +75,7 @@ export default async function projectLayout({ project, children }) {
           pages={moreProjects}
         />
       )}
-
+      
       <ContactSection />
     </>
   )
