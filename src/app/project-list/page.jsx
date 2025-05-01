@@ -26,7 +26,7 @@ function Projects({ projects }) {
                     <Image
                       src={project.logo}
                       alt=""
-                      className="h-16 w-16 flex-none"
+                      className={`${project.logoSize ?? 'h-16 w-16'} object-contain`}
                       unoptimized
                     />
                     <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -37,11 +37,11 @@ function Projects({ projects }) {
                     <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
                       {project.category}
                     </p>
-                    <p className="text-sm text-neutral-950 lg:mt-2">
+                    {/* <p className="text-sm text-neutral-950 lg:mt-2">
                       <time dateTime={project.date}>
                         {formatDate(project.date)}
                       </time>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">

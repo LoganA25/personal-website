@@ -1,0 +1,54 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import logo from '@/images/nfl_logo.png'
+import previewOne from '@/images/nfl_data_1.png'
+import previewTwo from '@/images/nfl_data_2.png'
+
+export const project = {
+  client: 'Logan Allen',
+  title: 'NFL Data Insights',
+  description:
+    'An end-to-end data project to uncover insights from betting odds and fantasy football projections.',
+  summary: [
+    `This idea was born to help guide smarter decision making in both betting and fantasy. By analyzing player performance and betting odds, it helps users identify what choices to make for higher rates of success.`,
+  ],
+  logo,
+  logoSize: 'h-16 w-12',
+  previewOne,
+  previewTwo,
+  category: 'Data Engineering/Analytics',
+}
+
+export const metadata = {
+  title: `${project.title} Project`,
+  description: project.description,
+}
+
+<div className="lg:pl-0 px-4 space-y-8">
+  <div className="pt-16 text-2xl font-bold">{project.title}</div>
+
+  This project was a technical deep dive into the world of sports data, focused on uncovering insights from historical betting odds and fantasy football projections. It was designed to serve two core goals: guiding smarter decisions in sports betting and fantasy roster management, and challenging myself by building a complete end-to-end data solution using a unified platform.
+
+  The pipeline includes everything from data ingestion and transformation to validation and insight generation, processing both historical and regularly updated datasets. It allowed me to apply scalable, production ready design patterns while deepening my understanding of modern data workflows.
+
+  While the initial implementation was built on a single platform for learning purposes, future iterations will transition to a more modular architecture. This shift will better align with the project&apos;s evolving goals, reduce costs, and offer greater flexibility for long-term development.
+
+  My ultimate goal for this is to have this ready before the next season. I hope others could utilize it to help with their decision making when it comes to betting and fantasy!
+
+  I currently don't have this set up for a live view, but in the meantime while that's being setup enjoy the visuals I took a snippets of!
+
+  <Image src={project.previewOne}/>
+  <Image src={project.previewTwo}/>
+
+  <div className="text-lg font-bold">Stack Used</div>
+
+  <div className="pb-6">
+    <TagList>
+      <TagListItem>Databricks (Delta Live Tables)</TagListItem>
+      <TagListItem>PySpark (Transformations)</TagListItem>
+      <TagListItem>Delta Lake (Storage & Lineage)</TagListItem>
+      <TagListItem>APIs (Betting Odds & Player Stats)</TagListItem>
+      <TagListItem>Pandas (Prototyping)</TagListItem>
+  </TagList>
+  </div>
+</div>

@@ -28,7 +28,7 @@ function Projects({ projects }: { projects: Array<MDXEntry<project>> }) {
                     <Image
                       src={project.logo}
                       alt={project.client}
-                      className="h-16 w-16"
+                      className={`${project.logoSize ?? 'h-16 w-16'} object-contain`}
                       unoptimized
                     />
                   </Link>
