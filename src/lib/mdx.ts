@@ -48,6 +48,7 @@ export interface project {
   summary: Array<string>
   logo: ImageProps['src']
   image: ImagePropsWithOptionalAlt
+  logoSize: string
   service: string
   testimonial: {
     author: {
